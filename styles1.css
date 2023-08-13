@@ -1,0 +1,1229 @@
+/* main variables and styles */
+:root{
+    --h-color: #2d495adb;
+    --b-color: #93cabe;
+    
+}
+body{
+    background-color: #fedf93;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;  
+     
+}
+h1, h2, h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+    
+
+}
+
+/* header*/
+header{
+    
+    /* header images of all pages */
+
+    background:linear-gradient(rgba(43, 42, 33, 0.45),rgba(55, 53, 53, 0.45)), url(images1/indexmain.jpg) no-repeat center;
+   
+    background-size:cover;
+    height: 1000px;
+    position: relative;
+
+.h-i{
+    background:linear-gradient(rgba(86, 69, 69, 0.45),rgba(55, 53, 53, 0.45)), url(images1/indexmain.jpg) no-repeat center;
+    background-blend-mode: luminosity;
+    background-size:cover;
+    height: 500px;
+    position: relative;
+}
+
+    .w-i{
+        background: linear-gradient(rgba(32, 31, 31, 0.45),rgba(55, 53, 53, 0.45)),url(images1/turtlecategoriesmain.jpg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+       
+    }
+    .b-i{
+        background: linear-gradient(rgba(32, 31, 31, 0.45),rgba(55, 53, 53, 0.45)),url(images1/hikkaduwamain1.jpg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+       
+    }
+    .a-i{
+        background: linear-gradient(rgba(32, 31, 31, 0.45),rgba(55, 53, 53, 0.45)),url(images1/hikkaduwamain1.jpg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+    }
+    .g-i{
+        background: url(images1/mainpage1.jpg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+    }
+    .ac-i{
+        background: url(images1/mainimage2.jpeg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+    }
+    .c-i{
+        background: url(images1/turtle3.jpg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+    }
+    
+    
+}
+
+
+/* main title of the web page */
+.h-t{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(234, 228, 211);
+    text-shadow: 4px 4px var(--h-color);
+    font-size:75px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.h-k{
+    text-align:center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(33, 26, 29, 0.921);
+    text-shadow: 4px 4px rgb(211, 205, 186);  ;
+    font-size:100px;
+    font-family:fantasy;
+}
+/* navigation bar */
+
+.wrapper{
+    width: 70px;
+    margin:auto;
+    height: 500px;
+    position: relative;
+
+}
+.logo{
+    position:relative;
+    display:inline-flex;
+    width: 100px;
+    border-radius: 20px;
+    
+}
+.menu-area {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.menu-area ul{
+    background: none;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu-area ul li{
+    display: inline-block;
+
+}
+.menu-area ul li a{
+    color: #e1ee8e;
+    text-decoration: none;
+    display: block;
+    padding: 15px 15px;
+    font-weight:600px;
+}
+.menu-area ul li:hover{
+    background: #4d4e3ed7;
+}
+.menu-area ul li:hover > ul{
+    display: block;
+}
+.menu-area ul ul{
+    display: none;
+    position:absolute;
+    top: 100%;
+    background: #494b2e;
+}
+.menu-area ul ul li{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #494b2e;
+}
+.menu-area ul ul ul{
+    position:absolute; 
+    left: 100%;
+    top: 0%
+}
+
+
+
+/* first paragraph for all of the pages in the website */
+
+#firstpara{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--b-color);
+    text-align: justify;
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(233, 230, 203);
+    color: black;
+    font-weight:lighter ;
+    font-size: 20px;    
+}
+/* footer*/
+footer{
+    background-color: var(--h-color);
+    padding: 20px;
+}
+.f1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+}
+.f-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: var(--b-color);
+    border-radius: 25px;
+    
+}
+.f-nav li a{
+    display: block;
+    color: var(--h-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.f-nav li a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);    
+}
+
+/* social media links */
+.f3{
+    color: var(--b-color);
+    text-align: center;
+}
+.grid-g{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 5px;
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15%;
+    margin-left: 25%;
+}
+.grid-h{
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+/* top button */
+.f4{
+    margin-top: 200px;
+    text-align: right;
+}
+.topbu a{
+    background-color: var(--b-color);
+    border: none;
+    color: var(--h-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+.top a{
+    border-radius: 2px;
+}
+/* home page */
+.grid-a{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--b-color);
+    border-radius: 80px;
+    padding: 20px;
+    
+    
+}
+.grid-b{
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 10px;
+    text-align: justify;    
+}
+#fourthpara{ 
+    text-align: justify;
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;        
+}
+.grid-c{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 0.5%;
+    width: auto;
+    height: auto;
+    align-self: center;
+    
+}
+.grid-d{  
+    padding: 7%;
+    text-align: center;  
+    border-radius: 5%; 
+}
+.grid-d img{
+    border-radius: 3%;
+    width: 100%;
+    height: auto;
+}
+.grid-d:hover, .grid-h:hover{
+    transform: scale(0.75,0.75);
+    transition: all 1s;
+}
+
+/* categories page */
+#w2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    width: auto;
+    background-color: var(--b-color);
+    text-align: center;
+}
+#w2 li a{
+    display: block;
+    color: var(--h-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#w2 li a:hover {
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+#ym{     
+    text-align:justify;
+    padding: 0;
+
+  
+    
+}
+/* tables in categories page */
+#tableturtles{
+    margin: 20px;    
+}
+#tableturtles thead{
+    padding: 20px;
+}
+#tableturtles td{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-left: 2px solid rgb(247, 243, 243);
+    border-right: 2px solid rgb(247, 243, 243);
+    border-bottom:2px solid rgb(247, 243, 243); 
+    border-top: 2px solid rgb(247, 243, 243);
+    
+}
+#w3 p, #w4 p, #w5 p{
+    background-color: rgb(162, 160, 154);
+    text-align:center;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;    
+}
+#w3 #tableturtles, #w3 thead, #w3 tr, #w3 tbody, #w4 table, #w4 thead, #w4 tr, #w4 tbody, #w5 table, #w5 thead, #w5 tr, #w5 tbody{
+    padding: 20px;
+    text-align: left;    
+}
+#w3 table img, #w4 table img, #w5 table img{
+    width: 300px;
+    height: auto;   
+}
+/*  table colours in categories */
+#c1{
+    background-color: #5D6D7E;
+    color: white;
+    text-align: center;
+}
+#c2{
+    background-color: #a6b239;
+    text-align: center;
+    
+}
+
+#c3{
+    background-color: #81dff0;
+    text-align: center;
+}
+#c4{
+    background-color: #09d5ac;
+    text-align: center;
+}
+/* Hikkaduwa page */
+#ha2{
+    overflow: hidden;    
+}
+#ha2 a{
+    float: left;
+    color: var(--h-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--h-color);
+    border-radius: 50px;
+    color: var(--b-color);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#ha2 a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+#ha3, #ha5{ 
+    text-align: justify;
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;        
+}
+.see{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: justify;
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;  
+}
+.see-1{
+    
+    padding: 20px;
+}
+.map1{
+    flex-wrap: wrap;
+}
+/* threats page */
+#a2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2%;
+}
+.ex{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 2%;
+}
+.ex-d{
+    padding: 2%;
+    background-color: var(--b-color);
+    
+}
+.ex img{
+    width: 400px;
+    height: auto;
+}
+#lin{
+    background-color: var(--b-color);
+    text-align: justify;
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    color: black;
+    
+}
+#hl{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 20%;
+    margin-right: 20%;   
+}
+#hl1 img{
+    width: 400px;
+    border-radius: 10px;
+}
+#hl1:hover{
+    opacity: 0.8;
+}
+#ac{
+    overflow: hidden;    
+}
+#ac a{
+    float: left;
+    color: var(--h-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--h-color);
+    border-radius: 50px;
+    color: var(--b-color);
+    margin-left: 650px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+#ac a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+/* bentota page */
+.b{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.b img{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.b img:hover{
+    transform: translate(50px, -25px);
+    transition: all 2s;
+}
+#nil{
+    text-align: center;
+    background-color: var(--b-color);
+    padding: 10px;
+    border-radius: 50px;
+}
+#nil p{
+    text-align: justify;
+}
+/* purchase and donations page */
+#con{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    background-color: var(--b-color);
+    border-radius: 50px;
+    padding: 5px;
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#con-1{
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+    
+}
+#tat{
+    text-align: center;
+}
+#tat img:hover{
+    transform: scale(1.5,1.5);
+    transition: all 2s;
+}
+.hi{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
+}
+#p2{
+    padding: 10px;
+    background-color: var(--h-color);
+}
+.d-i{
+    padding: 2%;
+    background-color: var(--b-color);
+    
+}
+.d img{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#st{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    align-self: center;
+    align-items: center;    
+}
+#sd{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10px;
+    align-self: center;
+    align-items: center;
+}
+#st-1, #st-2{
+    background-color: rgb(240, 249, 255);
+    border-radius: 500px;
+    text-align: center;
+    align-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+#st img, #sd img{
+    width: 100px;
+}
+#st img:hover, #sd img:hover{
+    transform: scale(1.5,1.5);
+    transition: all 2s;
+}
+/* form in the donations and purchases page */
+#don{
+    width: 60%;
+    border: 2px solid var(--h-color);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    font-size: 20px;
+    border-style: dashed;
+}
+#don input[type=text], #don input[type=number]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--h-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+#don input[type=radio]{
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+#card{
+    width: 70px;
+}
+#don #type, #don #amount{
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+#don #makedon, #don #conf{
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: var(--h-color);
+    color: var(--b-color);
+    border: 1px solid aliceblue;
+    width: 30%;
+}
+#result{
+    border: 2px black solid;
+    border-style: dotted;
+    padding: 10px;
+    width: 500px;
+    margin-left: 170px;
+}
+
+/* meta tag */
+@media screen and (max-width: 1075px) {
+    .h-1{
+        width:100%;
+        height: fit-content;
+        height:fit-content;
+    }
+    body{
+        width: 100%;
+        border: 2px solid #D7DBDD; 
+    }
+    /* home page */
+    .grid-a{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: var(--b-color);
+        border-radius: 50px;
+        padding: 20px;    
+        margin: 0%;
+    }
+    .grid-b{
+        
+        border-radius: 50px;
+        padding: 10px;
+        text-align: justify;    
+    }
+    /* footer*/
+    footer{
+        width: 100%;
+    }
+    #grid3{
+        width: 90%
+    }
+    .f1{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        
+    }
+    .f2{
+        width: 100%;
+        height: auto;
+    }
+    .f3{
+        color: var(--b-color);
+        text-align: center;
+        width: 100%;
+    }
+    .grid-g{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 15%;
+        margin-left: 10%;
+        width: 300px;
+    }
+    .grid-h{
+        width: 20px;
+    }
+    .f4{
+        margin-top: 0;
+        text-align: right;
+    }
+    header, #thirdpara, #fourthpara, #fifthpara{
+        width: 100%;
+    }
+    /* header */
+    .h-t p{
+        font-size: 40px;
+    }
+    .h-k  p{
+        font-size: 40px;
+    }
+    #hg2 a{
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        border-radius: 50px;
+        background-color: var(--b-color);
+    }
+    /* navigation bar */
+    .menu-area a{
+        overflow:hidden;
+        position: relative;
+        background-color: var(--h-color);
+        width: 100%;
+        
+    }
+    .menu-area a{
+        list-style-type:armenian;
+        display: block;
+        text-decoration: none;
+        margin: 0;
+        padding: 20px;
+        width: 90%;
+        background-color: var(--b-color);
+        color: var(--h-color);
+        text-align: center;
+        border: 1px solid var(--h-color);
+    }
+    .menu-area a.active{
+        background-color: var(--h-color);
+        color: var(--b-color);
+    }   
+}
+@media screen and (max-width: 400px) {  
+    body{
+        border: 2px solid #D7DBDD;
+        width: 100%; 
+        margin: 5px;
+    }
+    header, #thirdpara, #fourthpara, #fifthpara{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+    }
+    #grid3{
+        width: 90%
+    }
+    .f1{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        
+    }
+    .h-t p{
+        font-size: 90px;
+    }
+    .h-k p{
+        font-size: 90px;
+    }
+    /* navigation bar */
+    .mainnav{
+        width: 50%;
+    }
+    .mainnav a{
+        background-color: var(--b-color);
+        color: var(--h-color);
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        width: 50%;
+    }
+    .mainnav a.active{
+        background-color: var(--h-color);
+        color: var(--b-color);
+    }
+}
+/* media tag for the all of the pages' first paragraphs */
+@media screen and (max-width: 946px) {
+    #firstpara{
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 400px) {
+    #firstpara{
+        width: 100%;
+    }
+}
+/*  tables in categories media tags */
+@media screen and (max-width: 1075px){
+    .grid-a{
+        display: grid;
+        grid-template-columns: auto;          
+    }
+    #w1, #w2, #w3, #w4, #w5{
+        width: 100%;
+    }
+    .ym{
+        width: 100%;
+        
+    }
+   
+
+    }
+    #w3 table img, #w4 table img, #w5 table img{
+        width: 200px;
+        height: auto;
+    }
+    #fourthpara{
+        width: auto;
+    }
+    #tableturtles {
+        width: 500px;
+    }
+
+@media screen and (max-width: 400px){
+    #w1, #w2, #w3, #w4, #w5{
+        width: 100%;
+    }
+    .ym{
+        width: 100%;
+       
+    }
+    #w3 table img, #w4 table img, #w5 table img{
+        width: 100px;
+        height: auto;
+    }
+}
+/* hikkaduwa media tag */
+@media screen and (max-width: 1100px){
+    #ha2{
+        overflow: hidden;
+        width: auto;
+    }
+    #ha2 a{
+        width: 100px;
+    }
+    .see{
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+    }
+    .see-1{
+        width: auto;
+        padding: 1%;
+    }
+    .see-1 img{
+        width: 100px;
+    }
+    #ha1, #ha2, #ha3, #ha4, #ha5, #ha6{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .see{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;    
+    }
+    .see-1{
+        width: 100%;
+        padding: 1%;
+    }
+    .see-1 img{
+        width: 100%;
+    }
+    #ha1, #ha2, #ha3, #ha4, #ha5, #ha6{
+        width: 100%;
+    }   
+    .h-t p{
+        font-size: 50px;
+    }
+    .h-k p{
+        font-size: 50px;
+    }
+}
+/* threats page media tags*/
+@media screen and (max-width: 1075px){
+    #a2{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 2%;
+    }
+    .ex{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .ex-d, #lin{
+        width: auto;
+    }
+    #hl{
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 0%;
+        
+    }
+    #hl img{
+        width: 300px;
+    }
+    #ac a{
+        margin-left: 400px;
+    }
+}
+@media screen and (max-width: 400px){
+    .ex, .ex-d, #lin{
+        width: 100%;
+    }
+    #ac a{
+        margin-left: 200px;
+    }
+}
+/* bentota page media tag*/
+@media screen and (max-width: 1075px) {
+    #nil{
+        width: auto;
+    }
+    .b{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+    #b3 h2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+    #nil{
+        width: 100%;
+    }
+    .b{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        text-align: center;
+    }
+    #nil img{
+        width: 100%;
+    }
+    #b3 h2{
+        width: 100%;
+    }
+}
+/* purchases and donation  page media tag*/
+@media screen and (max-width: 1370px) {
+    #tat{
+        width: 100%;
+        
+    }
+    #con{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .d{
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+        margin: 0%;
+    }
+    #p2 h2, #p5 h2{
+        width: 100%;
+    }
+    #st{
+        margin-left: 0%;
+        margin-right: 20%;
+        
+    }
+    #sd{
+        margin-left: 10%;
+        margin-right: 30%;
+        
+    }
+    .hi{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 2%;
+    }
+    #d-i img{
+        width: 300px;
+    }
+    #p2{
+        padding: 10px;
+        background-color: var(--h-color);
+        width: auto;
+    }
+    .d{
+        width: auto;
+    }
+    #don{
+        width: 100%;
+        margin-left: 0%;
+    }
+    #don #type{
+        margin-left: 0%;
+    }
+    #don #makedon, #don #conf{
+        font-size: 20px;
+        width: 30%;
+    }
+
+    #card{
+        width: 50px;
+    }
+    #result{
+        margin-left: 0%;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #tat, #p2{
+        width: 100%;
+    }
+    #con{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 15%;
+        
+    }
+    #con img{
+        width: 60px;
+    }
+    .d{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .d-i img{
+        width: 300px;
+    }
+    #p2 h2, #p5 h2{
+        width: 100%;
+    }
+    #st{
+        margin-left: 0%;
+        margin-right: 10%;
+    }
+    #sd{
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    #st img, #sd img{
+        width: 50px;
+    }
+    #p2{
+        width: auto;
+    }
+    #card{
+        width: 30px;
+    }
+    #result{
+        margin-left: 0%;
+        width: 200px;
+    }
+}
+/* kosgoda  page */
+:root{
+    --h-color: #09054fdb;
+    --b-color: #FDFEFE;
+}
+body{
+    background: url(image/White-Marble-Wallpaper.webp) fixed;
+    background-size: cover;
+}
+#hg2 a{
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    /* padding: 20px; */
+    padding: 10px;
+    width: auto;
+    border-radius: 50px;
+    background-color: var(--b-color);
+    color: var(--h-color);
+}
+#hg2 a:hover {
+    background-color: var(--h-color);
+    color: var(--b-color);
+}
+#hg3, #hg5{
+    background-color: var(--b-color); 
+    padding: 10px;
+    border-radius: 50px;
+    text-align: justify;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cri{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cri img{
+    width: 490px;
+}
+.cri-1{
+    padding: 10px;
+    background-color: var(--b-color);
+    border-radius: 30px;
+    text-align: justify;
+}
+.cri-2{
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+/* meta tag */
+@media only screen and (max-width: 946px) {
+    
+    .cri{
+        width: auto;
+    }
+    #hg3, #hg5{
+        width: auto;
+    }
+    #hg2{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .cri{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .cri-2 img{
+        width: 300px;
+    }
+    #hg3, #hg5{
+        width: 100%;
+    }
+    #hg2{
+        width: 100%;
+    }
+}
+
+/* references :
+Anon., n.d. pexels,com. [Online] 
+Available at: https://wall.alphacoders.com/search.php?search=turtle+farm
+[Accessed 29 05 2023].
+BradFord, A., 2015. Live Science Turtle Facts. [Online] 
+Available at: https://www.livescience.com/52361-turtle-facts.html
+[Accessed 30 05 2023].
+clubocean.co, 2023. Club Ocean. [Online] 
+Available at: https://clubocean.co/pages/f-a-q
+[Accessed 30 05 2023].
+conservancy, s. t., 2023. se. [Online] 
+Available at: https://conserveturtles.org/information-about-sea-turtles-an-introduction/
+[Accessed 29 05 2023].
+Kosgoda sea turtle conservation project, 2023. Kosgoda Sea turtle conservation project. [Online] 
+Available at: https://www.kosgodaseaturtle.org/index.php/contact-us/
+[Accessed 29 05 2023].
+Local wildlife naturalists, 2021. Wild life tours in sri lanka and bird watching in srilanka. [Online] 
+Available at: https://www.srilankansafari.com/reptiles_leatherbackturtle.php
+[Accessed 29 05 2023].
+Love srilanka by Sri Lanka Toursim, 2023. SEA TURTLE HATCHERY AND RESCUE CENTRE. [Online] 
+Available at: https://www.lovesrilanka.org/sea-turtle-hatchery-and-rescue-centre/
+[Accessed 30 05 2023].
+oceantoday.noaa.gov, 2023. Endangered Ocean:Se turtles. [Online] 
+Available at: https://oceantoday.noaa.gov/endoceanseaturtles/
+[Accessed 29 05 2023].
+Seacology, 2020. Seacology supports sea turtles’ race for survival. [Online] 
+Available at: https://www.seacology.org/2020/04/seacology-supports-sea-turtles-race-for-survival/?gclid=Cj0KCQjwmtGjBhDhARIsAEqfDEfkxpKwoQlQla7XppqOghl5ffGDUBrArChLqNpDyB8SW
+[Accessed 30 05 2023].
+SEE Turtles.org, 2023. SEE Turtles instagram page. [Online] 
+Available at: https://www.instagram.com/see_turtles/?hl=en
+[Accessed 29 05 2023].
+SEEturtle.org, 2023. facebbok SEEturtle. [Online] 
+Available at: https://www.facebook.com/SEEturtles
+[Accessed 29 05 2023].
+SEEturtles.org, 2023. Seeturtles and plastic. [Online] 
+Available at: https://www.seeturtles.org/sea-turtles-plastic
+[Accessed 29 05 2023].
+SEEturtle-twitter, 2009. SEEturtle. [Online] 
+Available at: https://twitter.com/SEEturtles
+[Accessed 30 05 2023].
+Sri Lanka Tourism-Youtube, 2022. Turtle Hatchery Ahungalla , 100 Journeys Sri Lanka. [Online] 
+Available at: https://www.youtube.com/watch?v=FYjZndA-iS4
+[Accessed 31 05 2023].
+Sun leisure World, 2023. Turtle Hatchery Sun Leisure World. [Online] 
+Available at: https://www.sunleisureworld.com/destination/sri-lanka/hikkaduwa/tour/top-attractions/717/turtle-hatchery
+[Accessed 30 05 2023].
+Taru Villas, 2023. Taru Villas. [Online] 
+Available at: https://www.taruvillas.com/destination-guide/bentota/attractions/bentota-turtle-hatchery/
+[Accessed 29 05 2023].
+Trip Advisor, 2023. Trip Advisor. [Online] 
+Available at: https://www.tripadvisor.com/ShowUserReviews-g297895-d3613160-r159267621-Sea_Turtle_Protection_Association-Bentota_Galle_District_Southern_Province.html
+[Accessed 29 05 2023].
+WildLife wonders, 2023. Wild Life wonders-Turtle Gifts. [Online] 
+Available at: https://wildlifewonders.com/turtle-gifts/
+[Accessed 30 05 2023].
+Sea turtle week, 2023. Sea turtle week. [Online] 
+Available at: https://www.seaturtleweek.com/
+[Accessed 31 05 2023].
+
+
+
+        */

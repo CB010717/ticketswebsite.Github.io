@@ -1,0 +1,502 @@
+/* main variables and styles */
+:root{
+    --h-color: #2d495adb;
+    --b-color: #93cabe;
+    
+}
+body{
+    background-color: #225027;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;  
+     
+}
+h1, h2, h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+/* header*/
+header{
+    
+    /* header images of all pages */
+
+    background:linear-gradient(rgba(43, 42, 33, 0.45),rgba(55, 53, 53, 0.45)), url(images1/indexmain.jpg) no-repeat center;
+   
+    background-size:cover;
+    height: 1000px;
+    position: relative;
+
+.h-i{
+    background:linear-gradient(rgba(86, 69, 69, 0.45),rgba(55, 53, 53, 0.45)), url(images1/indexmain.jpg) no-repeat center;
+    background-blend-mode: luminosity;
+    background-size:cover;
+    height: 500px;
+    position: relative;
+}
+
+  
+    .g-i{
+        background: url(images1/homegrid7.jpeg) no-repeat center;
+        background-size: cover;
+        height: 700px;
+        position: relative;
+    }
+    .ac-i{
+        background: url(images1/mainimage2.jpeg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+    }
+    .c-i{
+        background: url(images1/turtle3.jpg) no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+    }
+    
+    
+}
+
+
+/* main title of the web page */
+.h-t{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(234, 228, 211);
+    text-shadow: 4px 4px var(--h-color);
+    font-size:75px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.h-k{
+    text-align:center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(7, 12, 63, 0.921);
+    text-shadow: 4px 4px rgb(211, 205, 186);  ;
+    font-size:100px;
+    font-family:fantasy;
+}
+/* navigation bar */
+
+.wrapper{
+    width: 70px;
+    margin:auto;
+    height: 500px;
+    position: relative;
+
+}
+.logo{
+    position:relative;
+    display:inline-flex;
+    width: 100px;
+    border-radius: 20px;
+    
+}
+.menu-area{
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.menu-area ul{
+    background: none;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu-area ul li{
+    display: inline-block;
+
+}
+.menu-area ul li a{
+    color: #e1ee8e;
+    text-decoration: none;
+    display: block;
+    padding: 15px 15px;
+    font-weight:600px;
+}
+.menu-area ul li:hover{
+    background: #4d4e3ed7;
+}
+.menu-area ul li:hover > ul{
+    display: block;
+}
+.menu-area ul ul{
+    display: none;
+    position:absolute;
+    top: 100%;
+    background: #494b2e;
+}
+.menu-area ul ul li{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #494b2e;
+}
+.menu-area ul ul ul{
+    position:absolute; 
+    left: 100%;
+    top: 0%
+}
+
+
+
+/* first paragraph same to all of them pages*/
+
+
+/* footer*/
+footer{
+    background-color: var(--h-color);
+    padding: 20px;
+}
+.f1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+}
+.f-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: var(--b-color);
+    border-radius: 25px;
+}
+.f-nav li a{
+    display: block;
+    color: var(--h-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.f-nav li a:hover{
+    background-color: var(--h-color);
+    color: var(--b-color);    
+}
+
+/* social media links */
+.f3{
+    color: var(--b-color);
+    text-align: center;
+}
+
+
+
+/* top button */
+.f4{
+    margin-top: 200px;
+    text-align:right ;
+}
+.topbu a{
+    background-color: var(--b-color);
+    border:black;
+    color: var(--h-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+.top a{
+    border-radius: 2px;
+}
+
+
+
+
+
+
+/* tag meta  */
+@media screen and (max-width: 1075px) {
+    .h-1{
+        width:100%;
+        height: fit-content;
+        height:fit-content;
+    }
+    body{
+        width: 100%;
+        border: 2px solid #D7DBDD; 
+    }
+    
+    /* footer*/
+    footer{
+        width: 100%;
+    }
+    #grid3{
+        width: 90%
+    }
+    .f1{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        
+    }
+    .f2{
+        width: 100%;
+        height: auto;
+    }
+    .f3{
+        color: var(--b-color);
+        text-align: center;
+        width: 100%;
+    }
+    .grid-g{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 15%;
+        margin-left: 10%;
+        width: 300px;
+        
+    }
+    .grid-h{
+        width: 20px;
+    }
+    .f4{
+        margin-top: 0;
+        text-align: right;
+    }
+    header, #thirdpara, #fourthpara, #fifthpara{
+        width: 100%;
+    }
+    /* header */
+    .h-t p{
+        font-size: 40px;
+    }
+    .h-k  p{
+        font-size: 40px;
+    }
+    #hg2 a{
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        border-radius: 50px;
+        background-color: var(--b-color);
+    }
+    /* navigation bar */
+    .menu-area{
+        overflow:hidden;
+        position: relative;
+        background-color: var(--h-color);
+        width: 100%;
+        
+    }
+    .menu-area a{
+        list-style-type:armenian;
+        display: block;
+        text-decoration: none;
+        margin: 0;
+        padding: 20px;
+        width: 90%;
+        background-color: var(--b-color);
+        color: var(--h-color);
+        text-align: center;
+        border: 1px solid var(--h-color);
+    }
+    .menu-area a.active{
+        background-color: var(--h-color);
+        color: var(--b-color);
+    }   
+}
+@media screen and (max-width: 400px) {  
+    body{
+        border: 2px solid #D7DBDD;
+        width: 100%; 
+        margin: 5px;
+    }
+    header, #thirdpara, #fourthpara, #fifthpara{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+    }
+    #grid3{
+        width: 90%
+    }
+    .f1{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        
+    }
+    .h-t p{
+        font-size: 90px;
+    }
+    .h-k p{
+        font-size: 90px;
+    }
+    /* navigation bar */
+    .mainnav{
+        width: 50%;
+    }
+    .mainnav a{
+        background-color: var(--b-color);
+        color: var(--h-color);
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        width: 50%;
+    }
+    .mainnav a.active{
+        background-color: var(--h-color);
+        color: var(--b-color);
+    }
+}
+
+
+
+
+
+
+/* media tags bentota page */
+@media screen and (max-width: 1075px){
+
+}
+.b img{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    
+}
+.b img:hover{
+    transform: translate(-45px, -25px);
+    transition: all 1s;
+}
+#nil{
+    text-align: center;
+    background-color:#4ecd9a;
+    padding: 10px;
+    border-radius: 50px;
+}
+#nil p{
+    text-align: justify;
+}
+@media screen and (min-width: 100px){
+    #nil{
+        width: 100%;
+    }
+    .b{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        text-align: center;
+    }
+    #nil img{
+        width: 70%;
+    }
+    #b3 h2{
+        width: 100%;
+    }
+}
+
+   
+   
+/* kosgoda  page */
+:root{
+    --h-color: #09054fdb;
+    --b-color: #FDFEFE;
+}
+body{
+    background: url(image/White-Marble-Wallpaper.webp) fixed;
+    background-size: cover;
+}
+
+#hg3, #hg5{
+    background-color: var(--b-color); 
+    padding: 10px;
+    border-radius: 50px;
+    text-align: justify;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* meta tag */
+@media only screen and (max-width: 946px) {
+    
+    
+    #hg3, #hg5{
+        width: auto;
+    }
+    #hg2{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+   
+    #hg3, #hg5{
+        width: 100%;
+    }
+    #hg2{
+        width: 100%;
+    }
+}
+
+/* references :
+Anon., n.d. pexels,com. [Online] 
+Available at: https://wall.alphacoders.com/search.php?search=turtle+farm
+[Accessed 29 05 2023].
+BradFord, A., 2015. Live Science Turtle Facts. [Online] 
+Available at: https://www.livescience.com/52361-turtle-facts.html
+[Accessed 30 05 2023].
+clubocean.co, 2023. Club Ocean. [Online] 
+Available at: https://clubocean.co/pages/f-a-q
+[Accessed 30 05 2023].
+conservancy, s. t., 2023. se. [Online] 
+Available at: https://conserveturtles.org/information-about-sea-turtles-an-introduction/
+[Accessed 29 05 2023].
+Kosgoda sea turtle conservation project, 2023. Kosgoda Sea turtle conservation project. [Online] 
+Available at: https://www.kosgodaseaturtle.org/index.php/contact-us/
+[Accessed 29 05 2023].
+Local wildlife naturalists, 2021. Wild life tours in sri lanka and bird watching in srilanka. [Online] 
+Available at: https://www.srilankansafari.com/reptiles_leatherbackturtle.php
+[Accessed 29 05 2023].
+Love srilanka by Sri Lanka Toursim, 2023. SEA TURTLE HATCHERY AND RESCUE CENTRE. [Online] 
+Available at: https://www.lovesrilanka.org/sea-turtle-hatchery-and-rescue-centre/
+[Accessed 30 05 2023].
+oceantoday.noaa.gov, 2023. Endangered Ocean:Se turtles. [Online] 
+Available at: https://oceantoday.noaa.gov/endoceanseaturtles/
+[Accessed 29 05 2023].
+Seacology, 2020. Seacology supports sea turtles’ race for survival. [Online] 
+Available at: https://www.seacology.org/2020/04/seacology-supports-sea-turtles-race-for-survival/?gclid=Cj0KCQjwmtGjBhDhARIsAEqfDEfkxpKwoQlQla7XppqOghl5ffGDUBrArChLqNpDyB8SW
+[Accessed 30 05 2023].
+SEE Turtles.org, 2023. SEE Turtles instagram page. [Online] 
+Available at: https://www.instagram.com/see_turtles/?hl=en
+[Accessed 29 05 2023].
+SEEturtle.org, 2023. facebbok SEEturtle. [Online] 
+Available at: https://www.facebook.com/SEEturtles
+[Accessed 29 05 2023].
+SEEturtles.org, 2023. Seeturtles and plastic. [Online] 
+Available at: https://www.seeturtles.org/sea-turtles-plastic
+[Accessed 29 05 2023].
+SEEturtle-twitter, 2009. SEEturtle. [Online] 
+Available at: https://twitter.com/SEEturtles
+[Accessed 30 05 2023].
+Sri Lanka Tourism-Youtube, 2022. Turtle Hatchery Ahungalla , 100 Journeys Sri Lanka. [Online] 
+Available at: https://www.youtube.com/watch?v=FYjZndA-iS4
+[Accessed 31 05 2023].
+Sun leisure World, 2023. Turtle Hatchery Sun Leisure World. [Online] 
+Available at: https://www.sunleisureworld.com/destination/sri-lanka/hikkaduwa/tour/top-attractions/717/turtle-hatchery
+[Accessed 30 05 2023].
+Taru Villas, 2023. Taru Villas. [Online] 
+Available at: https://www.taruvillas.com/destination-guide/bentota/attractions/bentota-turtle-hatchery/
+[Accessed 29 05 2023].
+Trip Advisor, 2023. Trip Advisor. [Online] 
+Available at: https://www.tripadvisor.com/ShowUserReviews-g297895-d3613160-r159267621-Sea_Turtle_Protection_Association-Bentota_Galle_District_Southern_Province.html
+[Accessed 29 05 2023].
+WildLife wonders, 2023. Wild Life wonders-Turtle Gifts. [Online] 
+Available at: https://wildlifewonders.com/turtle-gifts/
+[Accessed 30 05 2023].
+Sea turtle week, 2023. Sea turtle week. [Online] 
+Available at: https://www.seaturtleweek.com/
+[Accessed 31 05 2023].
+
+
+
+           */
+

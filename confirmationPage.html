@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="homeContainer">
+        <div class="headerContainer">
+            <div class="navbarContainer">
+                <div class="leftHeading">
+                    <a href="./index.html" style="color: white; text-decoration: none;">< Home</a>
+                </div>
+                <div class="heading">
+                    <h1>Buy Tickets</h1>
+                </div>
+                <div>
+                    <div class="rightHeading">
+                        <p>Show your tickets via mobile device or print at home.</p>
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="breadCrumbs">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Home</li>
+                        <li class="breadcrumb-item">Details</li>
+                        <li class="breadcrumb-item">Payment</li>
+                        <li class="breadcrumb-item active" style="color: #0d6efd;">Confirmation</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="confirmationContainer container">
+            <div class="confirmation mb-3">
+                <h3>Confirmation</h3>
+                <p><b>Thank you for your order. Your order has been confirmed with us. You can show this confirmation at the entrance. Following is the summary of your order.</b></p>
+            </div>
+
+            <div class="summaryTableContainer">
+                <div class="tableDate">
+                    <div class="title">
+                        <p>Date</p>
+                    </div>
+                    <div class="data">
+                        <p class="date"></p>
+                    </div>
+                </div>
+                <div class="tableTime">
+                    <div class="title">
+                        <p>Time</p>
+                    </div>
+                    <div class="data">
+                        <p class="time"></p>
+                    </div>
+                </div>
+                <div class="tableDuration">
+                    <div class="title">
+                        <p>Duration</p>
+                    </div>
+                    <div class="data">
+                        <p class="duration"></p>
+                    </div>
+                </div>
+                <div class="tableMobile">
+                    <div class="title">
+                        <p>Mobile</p>
+                    </div>
+                    <div class="data">
+                        <p class="mobile"></p>
+                    </div>
+                </div>
+                <div class="tableEmail">
+                    <div class="title">
+                        <p>Email</p>
+                    </div>
+                    <div class="data">
+                        <p class="email"></p>
+                    </div>
+                </div>
+                <div class="tableGender">
+                    <div class="title">
+                        <p>Gender</p>
+                    </div>
+                    <div class="data">
+                        <p class="gender"></p>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tickets</th>
+                            <th>Charges</th>
+                        </tr>
+                    </thead>
+                    <tbody class="guests"></tbody>
+                </table>
+                <div class="tablePrice">
+                    <div class="title">
+                        <p>Total Payable</p>
+                    </div>
+                    <div class="data">
+                        <p class="totalPrice"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag/dist/main.js"></script>
+<script src="./confirmationPageMain.js"></script>
+</html>
